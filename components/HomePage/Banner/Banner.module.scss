@@ -1,0 +1,110 @@
+@import "../../../scss/variables";
+/** By default, this is a mobile breakpoint **/
+.container {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.title {
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  color: var(--text-black);
+  font-size: 3rem;
+  line-height: 1;
+}
+.title1 {
+  color: rgba(249, 250, 251, 1);
+}
+.title2 {
+  display: block;
+  color: var(--text-purple);
+}
+.subTitle {
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--text-white-100);
+}
+.buttonWrapper {
+  margin-top: 1.25rem;
+}
+.heroImage {
+  position: absolute;
+  top: 0px;
+}
+.button {
+  background-color: var(--text-purple-dark);
+  cursor: pointer;
+  color: white;
+  outline: 0;
+  border: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  &:hover {
+    background-color: var(--text-purple-dark);
+  }
+}
+@media (min-width: $sm) {
+  .title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .subTitle {
+    margin-top: 1.25rem;
+    max-width: 36rem;
+  }
+  .buttonWrapper {
+    display: flex;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: $md) {
+  .title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+  .subTitle {
+    margin-top: 1.25rem;
+  }
+  .button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .heroImage {
+    right: 0%;
+  }
+}
+@media (min-width: $lg) {
+  .container {
+    text-align: left;
+  }
+  .title {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  .title2 {
+    padding-left: 0.5rem;
+  }
+  .subTitle {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .buttonWrapper {
+    justify-content: flex-start;
+  }
+  .heroImage {
+    right: 20%;
+  }
+}
+@media (min-width: $xl) {
+  .title2 {
+    display: inline;
+  }
+}
